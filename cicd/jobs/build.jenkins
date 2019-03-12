@@ -1,7 +1,7 @@
 #!/usr/bin/env groovy
 
-pipelineJob('build-jenkins-operator') {
-    displayName('Build jenkins-operator')
+pipelineJob('build-test') {
+    displayName('Build test')
 
     definition {
         cpsScm {
@@ -9,7 +9,7 @@ pipelineJob('build-jenkins-operator') {
                 git {
                     remote {
                         url('https://github.com/zlatra/test.git')
-                        credentials('jenkins-operator')
+                        credentials('test')
                     }
                     branches('*/master')
                 }
