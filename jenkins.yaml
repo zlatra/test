@@ -6,7 +6,7 @@ spec:
   master:
    image: jenkins/jenkins
   seedJobs:
-  - id: jenkins-operator
+  - id: test
     targets: "cicd/jobs/*.jenkins"
     description: "Test"
     repositoryBranch: master
