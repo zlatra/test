@@ -9,7 +9,7 @@ pipelineJob('build-test') {
                 git {
                     remote {
                         url('https://github.com/zlatra/test.git')
-                        credentials('test')
+//                        credentials('test')
                     }
                     branches('*/master')
                 }
