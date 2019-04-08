@@ -18,7 +18,7 @@ podTemplate(label: label,
                     checkout scm
                 }
                 container('go') {
-                    sh 'apk --no-cache --update add make git gcc libc-dev'
+                    sh 'go env'
                 }
             }
 
