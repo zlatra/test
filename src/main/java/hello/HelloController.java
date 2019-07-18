@@ -22,7 +22,7 @@ public class HelloController {
                 e.printStackTrace();
             }
 
-            return "<h1 style=\"color:blue;\">Hi! I'm running on: " + ip + "</h1>";
+            return "<h1 style=\"color:green;\">Hi! I'm running on: " + ip + "</h1>";
         }
     @RequestMapping("/hello")
         public String index2() {
