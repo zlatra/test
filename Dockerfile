@@ -1,4 +1,4 @@
-FROM maven:3.6-slim AS builder
+FROM maven:3.6-jdk-13-alpine AS builder
 WORKDIR /app
 COPY pom.xml .
 COPY src ./src
